@@ -118,7 +118,7 @@ function processCSVFile($csvFilePath, $outputDir) {
             $outputFile = fopen($outputFilePath, 'w');
 
             // WooCommerce tax CSV columns
-            $headers = ['Country Code', 'State Code', 'Postcode', 'City', 'Rate', 'Tax Name', 'Priority', 'Compound', 'Shipping', 'Tax Class'];
+            $headers = ['Country code', 'State code', 'Postcode / ZIP', 'City', 'Rate %', 'Tax name', 'Priority', 'Compound', 'Shipping', 'Tax class'];
             fputcsv($outputFile, $headers); // Write headers to the CSV
 
             // Write all rows for the current state
